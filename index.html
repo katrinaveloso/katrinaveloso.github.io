@@ -4,30 +4,207 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Katrina · Data Analyst</title>
+  <meta name="description" content="Katrina, data analytics graduate with a marketing background. Projects, experience and contact details.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@500;700&family=Source+Serif+4:ital,wght@0,400;0,600;1,400&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <nav>
-    <a href="#projects">Projects</a>
-    <a href="#about">About</a>
-    <a href="#contact">Contact</a>
-  </nav>
 
-  <header>
-    <h1>I'm Katrina</h1>
-    <p>Data analytics graduate with a marketing background.</p>
+  <header class="site-header">
+    <a class="brand" href="#top">Katrina</a>
+    <nav aria-label="Main">
+      <a href="#projects">Projects</a>
+      <a href="#about">About</a>
+      <a href="#experience">Experience</a>
+      <a href="#skills">Skills</a>
+      <a href="#contact">Contact</a>
+    </nav>
   </header>
 
-  <section id="projects">
-    <h2>Projects</h2>
-    <article>
-      <h3>Patient Length-of-Stay Prediction</h3>
-      <p>"Can we predict how long a patient will stay?"</p>
-      <details>
-        <summary>Read the full story</summary>
-        <p>Problem, approach, findings, what a business can do.</p>
-      </details>
-    </article>
-  </section>
+  <main id="top">
+
+    <!-- HERO -->
+    <section class="hero">
+      <div class="hero-text">
+        <p class="greeting">Hi, I'm Katrina.</p>
+        <h1>I turn messy data into answers a team can act on.</h1>
+        <p class="lead">I'm a recent graduate moving into data analytics, with a background in digital and email marketing. I'm at my best when I'm explaining what the numbers mean to the people who have to make the decision.</p>
+        <div class="actions">
+          <a class="btn primary" href="#projects">See my projects</a>
+          <a class="btn" href="Katrina_CV.pdf">Download CV</a>
+          <a class="btn" href="mailto:your.email@example.com">Email me</a>
+        </div>
+      </div>
+
+      <aside class="glance" aria-label="At a glance">
+        <h2>At a glance</h2>
+        <dl>
+          <dt>Looking for</dt>
+          <dd>Data analytics, business intelligence, marketing automation and project support roles</dd>
+          <dt>Location</dt>
+          <dd><span class="todo">Your city, country</span></dd>
+          <dt>Tools</dt>
+          <dd><span class="todo">List only tools you can use confidently, e.g. Python, SQL, Excel</span></dd>
+          <dt>Languages</dt>
+          <dd><span class="todo">Your languages</span></dd>
+          <dt>Currently learning</dt>
+          <dd><span class="todo">One thing you're working on right now</span></dd>
+        </dl>
+      </aside>
+    </section>
+
+    <!-- PROJECTS -->
+    <section id="projects">
+      <h2 class="section-title">Projects</h2>
+      <p class="section-intro">Each project starts with a question and ends with something a team could do about it.</p>
+
+      <article class="project">
+        <header>
+          <h3>Predicting patient length of stay</h3>
+          <p class="question">Can we tell, early on, which patients are likely to stay in hospital longer?</p>
+        </header>
+
+        <p>My university capstone. I built a gradient boosting classification model that predicts patient length of stay, so a hospital could plan beds and staffing earlier.</p>
+
+        <ul class="stats">
+          <li><strong class="todo">Your key number</strong><span>e.g. model accuracy or recall</span></li>
+          <li><strong class="todo">Your key number</strong><span>e.g. number of patient records</span></li>
+          <li><strong class="todo">Your key number</strong><span>e.g. most important factor found</span></li>
+        </ul>
+
+        <p class="tags">
+          <span>Gradient boosting</span><span>Classification</span><span class="todo">Add your tools</span>
+        </p>
+
+        <details>
+          <summary>Read the full story</summary>
+          <div class="story">
+            <h4>The problem</h4>
+            <p><span class="todo">Why does length of stay matter to a hospital? Two or three plain sentences.</span></p>
+
+            <h4>What I did</h4>
+            <p><span class="todo">Data you used, how you cleaned it, how you chose and tested the model. Say what you did yourself.</span></p>
+
+            <h4>What I found</h4>
+            <p><span class="todo">Your main results, in plain language.</span></p>
+
+            <h4>What a hospital could do with it</h4>
+            <p><span class="todo">One or two practical actions.</span></p>
+
+            <h4>Honest limits</h4>
+            <p><span class="todo">What the model can't tell you, and what you'd do differently. Naming limits builds trust.</span></p>
+          </div>
+        </details>
+
+        <p class="links">
+          <a href="https://github.com/your-username/your-repo">View on GitHub</a>
+          <a href="#">Slides</a>
+        </p>
+      </article>
+
+      <article class="project placeholder">
+        <header>
+          <h3 class="todo">Your next project</h3>
+          <p class="question todo">Start with the business question it answers.</p>
+        </header>
+        <p>Copy the project card above and replace the text. Ideas: a marketing campaign analysis, a dashboard, or an automation you built.</p>
+      </article>
+    </section>
+
+    <!-- ABOUT -->
+    <section id="about">
+      <h2 class="section-title">About me</h2>
+      <div class="about-grid">
+        <div>
+          <p>Before moving into data, I worked in government ICT administration, email marketing, digital marketing at a proptech company, and sales support. Across all of those roles, the work came down to the same thing: understanding what people need and explaining it clearly.</p>
+          <p>Communication is my strongest skill, and I want to use it in a data role. I'm early in my analytics career, and I'd rather show you real projects and say where I'm still learning than oversell.</p>
+          <p class="todo">Add a personal note here: what drew you to data, and what kind of team you want to join.</p>
+        </div>
+        <div class="outside">
+          <h3>Away from the screen</h3>
+          <p class="todo">Your hobbies, one short line</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXPERIENCE -->
+    <section id="experience">
+      <h2 class="section-title">Experience</h2>
+      <p class="section-intro todo">Put the most recent role first and add your real dates.</p>
+      <ol class="timeline">
+        <li>
+          <p class="when todo">Dates</p>
+          <h3>Digital Marketing Specialist</h3>
+          <p class="where">Proptech company</p>
+          <p class="todo">One or two lines on what you did and one result you can stand behind.</p>
+        </li>
+        <li>
+          <p class="when todo">Dates</p>
+          <h3>Email Marketing Specialist</h3>
+          <p class="todo">What you did and what it achieved.</p>
+        </li>
+        <li>
+          <p class="when todo">Dates</p>
+          <h3>ICT Admin Officer</h3>
+          <p class="where">Government</p>
+          <p class="todo">What you did and what it achieved.</p>
+        </li>
+        <li>
+          <p class="when todo">Dates</p>
+          <h3>Sales Assistant</h3>
+          <p class="todo">What you did and what it achieved.</p>
+        </li>
+        <li>
+          <p class="when todo">Dates</p>
+          <h3>University degree</h3>
+          <p class="todo">Degree name and university. Mention the capstone.</p>
+        </li>
+      </ol>
+    </section>
+
+    <!-- SKILLS -->
+    <section id="skills">
+      <h2 class="section-title">Skills</h2>
+      <p class="section-intro">Grouped by what I use them for. I list only what I've actually used in a project or job.</p>
+      <div class="skill-groups">
+        <div>
+          <h3>Analysis</h3>
+          <p class="chips"><span class="todo">Add yours</span></p>
+        </div>
+        <div>
+          <h3>Dashboards and reporting</h3>
+          <p class="chips"><span class="todo">Add yours</span></p>
+        </div>
+        <div>
+          <h3>Machine learning</h3>
+          <p class="chips"><span>Gradient boosting</span><span>Classification</span></p>
+        </div>
+        <div>
+          <h3>Marketing and automation</h3>
+          <p class="chips"><span class="todo">Add yours</span></p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT -->
+    <section id="contact">
+      <h2 class="section-title">Contact</h2>
+      <p class="section-intro">If you're hiring for a data, BI or marketing automation role, or want to talk about a project, email is the quickest way to reach me.</p>
+      <p class="actions">
+        <a class="btn primary" href="mailto:your.email@example.com">Email me</a>
+        <a class="btn" href="https://www.linkedin.com/in/your-profile">LinkedIn</a>
+        <a class="btn" href="https://github.com/your-username">GitHub</a>
+        <a class="btn" href="Katrina_CV.pdf">Download CV</a>
+      </p>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>© 2026 Katrina</p>
+  </footer>
+
 </body>
 </html>
